@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Blogs"
+permalink: /posts/
+---
+
+<section class="posts-archive">
+  <header class="posts-archive-head">
+    <h1 class="posts-archive-title">Blogs</h1>
+    <p class="posts-archive-sub">The full archive.</p>
+  </header>
+
+  <div class="catalogue">
+    {% for post in site.posts %}
+      {% include catalogue_item.html %}
+    {% endfor %}
+  </div>
+</section>

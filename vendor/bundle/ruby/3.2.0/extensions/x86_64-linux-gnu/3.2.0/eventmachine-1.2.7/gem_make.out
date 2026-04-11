@@ -1,0 +1,19 @@
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260410-43145-z3x0cu sitelibdir\=./.gem.20260410-43145-z3x0cu clean
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260410-43145-z3x0cu sitelibdir\=./.gem.20260410-43145-z3x0cu
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260410-43145-z3x0cu sitelibdir\=./.gem.20260410-43145-z3x0cu install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20260410-43145-z3x0cu
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260410-43145-z3x0cu sitelibdir\=./.gem.20260410-43145-z3x0cu clean

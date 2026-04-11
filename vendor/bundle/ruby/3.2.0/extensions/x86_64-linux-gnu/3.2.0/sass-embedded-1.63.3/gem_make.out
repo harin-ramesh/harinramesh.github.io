@@ -1,0 +1,12 @@
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/sass-embedded-1.63.3/ext/sass
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby -rrubygems /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/rake-12.3.3/exe/rake RUBYARCHDIR\=/home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux-gnu/3.2.0/sass-embedded-1.63.3 RUBYLIBDIR\=/home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux-gnu/3.2.0/sass-embedded-1.63.3
+fetch https://github.com/sass/dart-sass/releases/download/1.63.3/dart-sass-1.63.3-linux-x64.tar.gz
+rake aborted!
+ArgumentError: wrong number of arguments (given 2, expected 1)
+/home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/sass-embedded-1.63.3/ext/sass/Rakefile:117:in `unarchive'
+/home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/sass-embedded-1.63.3/ext/sass/Rakefile:22:in `block in <top (required)>'
+/home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/rake-12.3.3/exe/rake:27:in `<main>'
+Tasks: TOP => default => install => cli.rb => dart-sass
+(See full trace by running task with --trace)
+
+rake failed, exit code 1

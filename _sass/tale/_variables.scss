@@ -1,20 +1,21 @@
 // Colors
-$default-color: #555 !default;
-$default-shade: #353535 !default;
-$default-tint: #aaa !default;
-$grey-1: #979797 !default;
-$grey-2: #e5e5e5 !default;
-$grey-3: #f9f9f9 !default;
+$default-color: #5c5c5c !default;
+$default-shade: #141414 !default;
+$default-tint: #9a9a9a !default;
+$grey-1: #a0a0a0 !default;
+$grey-2: #ececec !default;
+$grey-3: #f7f7f7 !default;
 $white: #fff !default;
-$blue: #4a9ae1 !default;
-$shadow-color: rgba(0, 0, 0, .2) !default;
-$code-color: #bf616a !default;
+$blue: #141414 !default;
+$shadow-color: rgba(0, 0, 0, .06) !default;
+$code-color: #d94f4f !default;
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
-$monospaced: Menlo, Monaco, monospace !default;
+$sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$display: 'Caveat', 'Inter', cursive !default;
+$serif-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$serif-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$monospaced: 'JetBrains Mono', Menlo, Monaco, monospace !default;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;

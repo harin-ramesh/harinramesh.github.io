@@ -1,21 +1,24 @@
 .pagination {
-  border-top: .5px solid $grey-2;
-  font-family: $serif-secondary;
-  padding-top: 2rem;
+  border-top: 1px solid $grey-2;
+  font-family: $sans-serif;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
   position: relative;
   text-align: center;
 
   span {
-    color: $default-shade;
-    font-size: 1.1rem;
+    color: $default-tint;
+    font-size: .9rem;
   }
 
   .top {
-    @include transition(all .3s ease-out);
-    color: $default-color;
+    @include transition(opacity .15s ease-out);
+    color: $default-tint;
     font-family: $sans-serif;
-    font-size: 1.1rem;
-    opacity: .6;
+    font-size: .9rem;
+    letter-spacing: .02em;
+    opacity: .8;
+    text-transform: uppercase;
 
     &:hover {
       opacity: 1;
@@ -23,13 +26,15 @@
   }
 
   .arrow {
-    @include transition(all .3s ease-out);
-    color: $default-color;
+    @include transition(opacity .15s ease-out);
+    color: $default-tint;
+    font-size: 1.1rem;
     position: absolute;
 
     &:hover,
     &:focus {
-      opacity: .6;
+      color: $default-shade;
+      opacity: 1;
       text-decoration: none;
     }
   }

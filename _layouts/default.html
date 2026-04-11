@@ -3,12 +3,16 @@
 
   {% include head.html %}
 
-  <body>
-
-    {% include navigation.html %}
-
+  <body class="layout-{{ page.layout | default: 'default' }}">
     <main>
-      {{ content }}
+      {% include hero.html %}
+
+      <div class="page-row">
+        <div class="page-col">
+          {{ content }}
+        </div>
+        {% include sidebar.html %}
+      </div>
     </main>
 
     {% include footer.html %}

@@ -1,0 +1,19 @@
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260410-44022-g2hbyr sitelibdir\=./.gem.20260410-44022-g2hbyr clean
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260410-44022-g2hbyr sitelibdir\=./.gem.20260410-44022-g2hbyr
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260410-44022-g2hbyr sitelibdir\=./.gem.20260410-44022-g2hbyr install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260410-44022-g2hbyr
+
+current directory: /home/harin/working_dir/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260410-44022-g2hbyr sitelibdir\=./.gem.20260410-44022-g2hbyr clean

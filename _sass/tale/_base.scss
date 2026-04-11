@@ -1,6 +1,6 @@
 * {
   @include box-sizing;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 html,
@@ -11,9 +11,11 @@ body {
 }
 
 html {
-  font-family: $serif-primary;
-  font-size: 14px;
+  font-family: $sans-serif;
+  font-size: 15px;
   overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   @media (min-width: 600px) {
     font-size: 16px;
@@ -22,6 +24,9 @@ html {
 
 body {
   -webkit-text-size-adjust: 100%;
+  background: $white;
+  font-weight: 400;
+  letter-spacing: -0.005em;
 }
 
 h1,
@@ -32,26 +37,34 @@ h5,
 h6 {
   color: $default-shade;
   font-family: $sans-serif;
-  line-height: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 
 a {
-  color: $blue;
+  color: $default-shade;
   text-decoration: none;
+  @include transition(opacity .15s ease-out);
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
 }
 
 blockquote {
-  border-left: .25rem solid $grey-2;
+  border-left: .2rem solid $grey-2;
   color: $grey-1;
-  margin: .8rem 0;
-  padding: .5rem 1rem;
+  margin: 1rem 0;
+  padding: .25rem 1rem;
 
   p:last-child {
     margin-bottom: 0;
   }
 
   @media (min-width: 600px) {
-    padding: 0 5rem 0 1.25rem;
+    padding: 0 4rem 0 1.25rem;
   }
 }
 
@@ -59,6 +72,12 @@ img {
   display: block;
   margin: 0 0 1rem;
   max-width: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $grey-2;
+  margin: 2rem 0;
 }
 
 td {

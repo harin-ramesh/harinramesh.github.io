@@ -1,0 +1,5 @@
+{% assign current = page.url %}
+<nav class="side-nav">
+  <a href="{{ site.baseurl }}/"{% if current == '/' %} class="active"{% endif %}>Home</a>
+  <a href="{{ '/posts/' | relative_url }}"{% if current contains '/posts' or page.layout == 'post' %} class="active"{% endif %}>Blogs</a>
+</nav>

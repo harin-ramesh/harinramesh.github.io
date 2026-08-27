@@ -2,7 +2,7 @@
 title:          Harin
 description:    "My little place in the internet"
 baseurl:        ""
-url:            "https://engineeringmonkey.in"
+url:            "https://harin.in"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
@@ -10,7 +10,7 @@ google_analytics: UA—XXXXXXXX-X
 # Author
 author:
   name:         Harin
-  url:          https://engineeringmonkey.in
+  url:          https://harin.in
   email:        iamharinramesh@gmail.com
 
 # Build settings

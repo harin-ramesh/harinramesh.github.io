@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How We Made Computers Faster | Harin</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="How We Made Computers Faster" />
+<meta name="author" content="Harin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My little place in the internet" />
+<meta property="og:description" content="My little place in the internet" />
+<link rel="canonical" href="https://harin.in/2026-08-20/how-we-made-computers-faster" />
+<meta property="og:url" content="https://harin.in/2026-08-20/how-we-made-computers-faster" />
+<meta property="og:site_name" content="Harin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-20T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How We Made Computers Faster" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Harin"},"dateModified":"2026-08-20T00:00:00+05:30","datePublished":"2026-08-20T00:00:00+05:30","description":"My little place in the internet","headline":"How We Made Computers Faster","mainEntityOfPage":{"@type":"WebPage","@id":"https://harin.in/2026-08-20/how-we-made-computers-faster"},"url":"https://harin.in/2026-08-20/how-we-made-computers-faster"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://harin.in/feed.xml" title="Harin" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body class="layout-post">
+    <main>
+      <header class="hero">
+  <a href="/" class="hero-name-link">
+    <h1 class="hero-name">Harin</h1>
+  </a>
+  <div class="hero-socials">
+    <a href="https://github.com/harin-ramesh" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.18 1.18.92-.26 1.9-.39 2.88-.39s1.96.13 2.88.39c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.78.12 3.07.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.26 5.69.41.36.77 1.07.77 2.16 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5z"/>
+      </svg>
+    </a>
+    <a href="https://x.com/harin_ramesh" target="_blank" rel="noopener" aria-label="X">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.83l-5.35-6.99L4.6 22H1.34l8.04-9.19L1 2h7l4.84 6.4L18.244 2zm-2.4 18h1.89L7.25 4H5.22l10.624 16z"/>
+      </svg>
+    </a>
+    <a href="mailto:iamharinramesh@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+        <path d="M3 6l9 7 9-7"/>
+      </svg>
+    </a>
+    <a href="/feed.xml" aria-label="RSS feed">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M6.18 17.82a2.18 2.18 0 1 1-4.36 0 2.18 2.18 0 0 1 4.36 0zM4 4.44v3.1a12.46 12.46 0 0 1 12.46 12.46h3.1C19.56 11.67 12.33 4.44 4 4.44zm0 5.82v3.1a6.64 6.64 0 0 1 6.64 6.64h3.1A9.74 9.74 0 0 0 4 10.26z"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+
+      <div class="page-row">
+        <div class="page-col">
+          <article class="post">
+  
+  <header class="post-header">
+    <time datetime="2026-08-20 00:00:00 +0530" class="post-date">Aug 20, 2026</time>
+    <h1 class="post-title">How We Made Computers Faster</h1>
+  </header>
+  
+
+  <div class="post-content">
+    <p><br /><br />
+<img src="/assets/how-we-made-computers-faster/cover.jpg" alt="A timeline of CPU parallelism: single-cycle execution, pipelining, superscalar and out-of-order, SIMD, multicore, and SMT" />
+<br /><br /></p>
+
+<p>Computing history can be viewed as one long attempt to answer a simple question:</p>
+
+<p>How do we keep the hardware busy?</p>
+
+<p>In the beginning, a CPU was essentially a single worker. It had a register file, an ALU, and logic to fetch and decode instructions. It fetched an instruction, decoded it, executed it, and wrote the result back.</p>
+
+<p>If we wanted more performance, the obvious answer was simple: increase the clock speed.</p>
+
+<p>But we soon realized something inefficient was happening. While the ALU was executing, the fetch and decode logic was often sitting idle. While one instruction was being written back, other parts of the CPU had nothing to do.</p>
+
+<p>So we split the work into stages and pipelined the processor.</p>
+
+<p>Fetching one instruction, decoding another, executing a third, and writing back a fourth could now happen simultaneously. Like an assembly line, different parts of the CPU could work on different instructions during the same cycle.</p>
+
+<p>But then came the next question:</p>
+
+<p>Why have only one ALU?</p>
+
+<p>Programs contain many instructions that are independent of one another. If one instruction is adding two numbers, another might be multiplying two completely unrelated numbers.</p>
+
+<p>So we widened the machine.</p>
+
+<p>Multiple execution units could operate simultaneously, while increasingly sophisticated hardware looked ahead, identified independent instructions, and scheduled them for execution. This gave us superscalar processors and out-of-order execution — extracting instruction-level parallelism directly from ordinary sequential code.</p>
+
+<p>Then we discovered another kind of parallelism.</p>
+
+<p>A huge amount of computation involves performing the same operation on many pieces of data. Add these eight numbers to those eight numbers. Compare these sixteen pixels. Multiply these vectors.</p>
+
+<p>Instead of executing eight separate instructions, why not execute one instruction across eight data elements?</p>
+
+<p>That gave us SIMD — Single Instruction, Multiple Data.</p>
+
+<p>Vector units allowed a single instruction to operate on multiple lanes of data simultaneously. The hardware was no longer just finding independent instructions; it was doing more work with each instruction.</p>
+
+<p>But eventually, single-core scaling hit a wall.</p>
+
+<p>The problem wasn’t a lack of cleverness. It was power and heat.</p>
+
+<p>Making one core increasingly complex and increasingly fast became too expensive in terms of power consumption. So instead of building one enormous core, we started putting multiple cores on the same chip — and multiple sockets in larger systems.</p>
+
+<p>Parallelism moved up another level.</p>
+
+<p>Now the programmer had to explicitly express more of the parallelism: threads, synchronization, shared memory, locks, and eventually sophisticated parallel programming models.</p>
+
+<p>But there was still a problem.</p>
+
+<p>Even with multiple cores and powerful execution units, those units frequently sat idle.</p>
+
+<p>A cache miss could take hundreds of cycles. During that time, the CPU might have plenty of computational capacity but nothing useful to execute.</p>
+
+<p>So we asked:</p>
+
+<p>What if the core could work on something else while it waited?</p>
+
+<p>Instead of adding another complete core, we duplicated enough architectural state — registers, program counters, and related state — to keep multiple threads in flight.</p>
+
+<p>When one thread stalled waiting for memory, the processor could execute another.</p>
+
+<p>This is SMT (Simultaneous Multithreading), commonly known as Hyper-Threading.</p>
+
+<p>Crucially, SMT doesn’t magically give the core another set of ALUs. It gives the existing execution resources more opportunities to stay busy.</p>
+
+<p>The whole arc is one idea repeated at different scales: find the idle hardware, and find work to fill it.</p>
+
+<p>And it never stopped — GPUs took SIMD to the extreme, and accelerators like TPUs and NPUs took it further still by hardwiring the one operation that matters most.</p>
+
+  </div>
+</article>
+
+
+
+<div class="pagination">
+  
+  
+    <a href="/2023-02-18/math-behind-backpropogation" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+        </div>
+        
+<nav class="side-nav">
+  <a href="/">Home</a>
+  <a href="/posts/" class="active">Blogs</a>
+</nav>
+
+      </div>
+    </main>
+
+    <footer>
+  <span>&copy; Harin, <time datetime="2026-08-27 14:22:02 +0530">2026</time></span>
+</footer>
+
+  </body>
+</html>

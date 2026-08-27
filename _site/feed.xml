@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-11T09:45:54+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Harin</title><subtitle>My little place in the internet</subtitle><author><name>Harin</name><email>iamharinramesh@gmail.com</email></author><entry><title type="html">Math behind Back-Propagation</title><link href="http://localhost:4000/2023-02-18/math-behind-backpropogation" rel="alternate" type="text/html" title="Math behind Back-Propagation" /><published>2023-02-18T00:00:00+05:30</published><updated>2023-02-18T00:00:00+05:30</updated><id>http://localhost:4000/2023-02-18/math-behind-backpropogation</id><content type="html" xml:base="http://localhost:4000/2023-02-18/math-behind-backpropogation"><![CDATA[<p><br /><br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://harin.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://harin.in/" rel="alternate" type="text/html" /><updated>2026-08-27T14:22:02+05:30</updated><id>https://harin.in/feed.xml</id><title type="html">Harin</title><subtitle>My little place in the internet</subtitle><author><name>Harin</name><email>iamharinramesh@gmail.com</email></author><entry><title type="html">How We Made Computers Faster</title><link href="https://harin.in/2026-08-20/how-we-made-computers-faster" rel="alternate" type="text/html" title="How We Made Computers Faster" /><published>2026-08-20T00:00:00+05:30</published><updated>2026-08-20T00:00:00+05:30</updated><id>https://harin.in/2026-08-20/how-we-made-computers-faster</id><content type="html" xml:base="https://harin.in/2026-08-20/how-we-made-computers-faster"><![CDATA[<p><br /><br />
+<img src="/assets/how-we-made-computers-faster/cover.jpg" alt="A timeline of CPU parallelism: single-cycle execution, pipelining, superscalar and out-of-order, SIMD, multicore, and SMT" />
+<br /><br /></p>
+
+<p>Computing history can be viewed as one long attempt to answer a simple question:</p>
+
+<p>How do we keep the hardware busy?</p>
+
+<p>In the beginning, a CPU was essentially a single worker. It had a register file, an ALU, and logic to fetch and decode instructions. It fetched an instruction, decoded it, executed it, and wrote the result back.</p>
+
+<p>If we wanted more performance, the obvious answer was simple: increase the clock speed.</p>
+
+<p>But we soon realized something inefficient was happening. While the ALU was executing, the fetch and decode logic was often sitting idle. While one instruction was being written back, other parts of the CPU had nothing to do.</p>
+
+<p>So we split the work into stages and pipelined the processor.</p>
+
+<p>Fetching one instruction, decoding another, executing a third, and writing back a fourth could now happen simultaneously. Like an assembly line, different parts of the CPU could work on different instructions during the same cycle.</p>
+
+<p>But then came the next question:</p>
+
+<p>Why have only one ALU?</p>
+
+<p>Programs contain many instructions that are independent of one another. If one instruction is adding two numbers, another might be multiplying two completely unrelated numbers.</p>
+
+<p>So we widened the machine.</p>
+
+<p>Multiple execution units could operate simultaneously, while increasingly sophisticated hardware looked ahead, identified independent instructions, and scheduled them for execution. This gave us superscalar processors and out-of-order execution — extracting instruction-level parallelism directly from ordinary sequential code.</p>
+
+<p>Then we discovered another kind of parallelism.</p>
+
+<p>A huge amount of computation involves performing the same operation on many pieces of data. Add these eight numbers to those eight numbers. Compare these sixteen pixels. Multiply these vectors.</p>
+
+<p>Instead of executing eight separate instructions, why not execute one instruction across eight data elements?</p>
+
+<p>That gave us SIMD — Single Instruction, Multiple Data.</p>
+
+<p>Vector units allowed a single instruction to operate on multiple lanes of data simultaneously. The hardware was no longer just finding independent instructions; it was doing more work with each instruction.</p>
+
+<p>But eventually, single-core scaling hit a wall.</p>
+
+<p>The problem wasn’t a lack of cleverness. It was power and heat.</p>
+
+<p>Making one core increasingly complex and increasingly fast became too expensive in terms of power consumption. So instead of building one enormous core, we started putting multiple cores on the same chip — and multiple sockets in larger systems.</p>
+
+<p>Parallelism moved up another level.</p>
+
+<p>Now the programmer had to explicitly express more of the parallelism: threads, synchronization, shared memory, locks, and eventually sophisticated parallel programming models.</p>
+
+<p>But there was still a problem.</p>
+
+<p>Even with multiple cores and powerful execution units, those units frequently sat idle.</p>
+
+<p>A cache miss could take hundreds of cycles. During that time, the CPU might have plenty of computational capacity but nothing useful to execute.</p>
+
+<p>So we asked:</p>
+
+<p>What if the core could work on something else while it waited?</p>
+
+<p>Instead of adding another complete core, we duplicated enough architectural state — registers, program counters, and related state — to keep multiple threads in flight.</p>
+
+<p>When one thread stalled waiting for memory, the processor could execute another.</p>
+
+<p>This is SMT (Simultaneous Multithreading), commonly known as Hyper-Threading.</p>
+
+<p>Crucially, SMT doesn’t magically give the core another set of ALUs. It gives the existing execution resources more opportunities to stay busy.</p>
+
+<p>The whole arc is one idea repeated at different scales: find the idle hardware, and find work to fill it.</p>
+
+<p>And it never stopped — GPUs took SIMD to the extreme, and accelerators like TPUs and NPUs took it further still by hardwiring the one operation that matters most.</p>]]></content><author><name>Harin</name></author><category term="ComputerArchitecture" /><category term="Hardware" /><category term="Parallelism" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Math behind Back-Propagation</title><link href="https://harin.in/2023-02-18/math-behind-backpropogation" rel="alternate" type="text/html" title="Math behind Back-Propagation" /><published>2023-02-18T00:00:00+05:30</published><updated>2023-02-18T00:00:00+05:30</updated><id>https://harin.in/2023-02-18/math-behind-backpropogation</id><content type="html" xml:base="https://harin.in/2023-02-18/math-behind-backpropogation"><![CDATA[<p><br /><br />
 <img src="/assets/math-behind-back-propogation/image1.webp" alt="dass" />
 <br /><br /></p>
 
